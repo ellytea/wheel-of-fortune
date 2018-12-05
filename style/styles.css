@@ -1,0 +1,26 @@
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.board-container {
+  background: purple;
+  border: solid black 2px;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+}
+
+.round-container, .player-container,
+.board-container, .button-container {
+  display: inline-block;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+.player {
+  border: solid black 2px;
+}
