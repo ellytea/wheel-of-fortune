@@ -9,6 +9,7 @@ body {
   grid-template-areas:
   "main main main aside"
   "main main main aside";
+  background-color: #4D469F;
 }
 
 .left-section {
@@ -19,10 +20,12 @@ body {
   grid-area: aside;
 }
 
+
 .board-container {
   width: 950px;
   height: 400px;
   border: solid 1px black;
+  background-color: #62BB69;
 }
 .row1,
 .row2,
@@ -41,13 +44,20 @@ body {
 .box14,
 .box43,
 .box56 {
-  background-color: black;
+  background-color: #4F7C3A;
 }
 
 .keyboard-container {
   width: 950px;
   height: 200px;
   border: solid 1px black;
+  background-color: #B3CEF3;
+}
+
+.vowel-container {
+  border-right: solid 2px black;
+  width: 200px;
+  height: 202px;
 }
 
 .round-container {
@@ -93,13 +103,42 @@ body {
   width: 400px
 }
 
+.player-one-container {
+  background-color: #ED6E6F;
+}
+
+.player-two-container {
+  background-color: #FADF53;
+}
+
+.player-three-container {
+  background-color: #627DE7;
+}
+
 .player-font {
   margin-left: 30px;
   font-size: 1.2rem;
 }
 
+.spinner {
+  width: 270px;
+  margin: auto;
+}
+
 .buttons-container {
   margin-bottom: -15px;
+}
+
+.spin-btn {
+  background-color: #EB89F9;
+}
+
+.solve-btn {
+  background-color: #97E96E;
+}
+
+.buy-btn {
+  background-color: #F5B768;
 }
 
 .btn-styles {
