@@ -23,8 +23,6 @@ body {
 .board-container {
   width: 950px;
   height: 400px;
-  border: solid 1px black;
-  background-color: #62BB69;
 }
 .row1,
 .row2,
@@ -37,14 +35,18 @@ body {
   width: 68px;
   height: 97.9px;
   border: solid black 1px;
+  background-color: #33BF60;
 }
 
 .box1,
 .box14,
 .box43,
 .box56 {
-  background-color: #4F7C3A;
+  background-color: #4D469F;
+  border: none;
 }
+
+
 
 .keyboard-container {
   width: 950px;
