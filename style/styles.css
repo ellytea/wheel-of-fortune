@@ -9,7 +9,7 @@ body {
   grid-template-areas:
   "main main main aside"
   "main main main aside";
-  background-color: #4D469F;
+  background: #4D469F url('https://thumbs.gfycat.com/EvenScaryKitfox-size_restricted.gif');
 }
 
 .left-section {
@@ -48,9 +48,9 @@ body {
 
 .keyboard-container {
   width: 950px;
-  height: 200px;
+  height: 150px;
   border: solid 1px black;
-  background-color: #B3CEF3;
+  background: #B3CEF3;
 }
 
 .vowel-container {
@@ -60,18 +60,17 @@ body {
 }
 
 .round-container {
-  border: solid black 1px;
-  border-radius: 40px;
   margin: 15px 20px;
   width: 250px;
 }
 
 .round-text {
-  margin: 5px 20px;
+  color: #fff;
   font-size: 2.2rem;
 }
 
 .catergory-text {
+  color: #fff;
   font-size: 2.2rem;
   margin: 15px 20px;
 }
@@ -125,7 +124,7 @@ body {
 }
 
 .buttons-container {
-  margin-bottom: -15px;
+  /*margin-bottom: -15px;*/
 }
 
 .spin-btn {
