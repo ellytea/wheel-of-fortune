@@ -16,7 +16,6 @@ describe('Puzzle', function() {
     puzzle.generatePuzzles();
 
     expect(puzzle.puzzleArray.length).to.equal(4);
-
   });
 
 });
