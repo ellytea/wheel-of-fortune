@@ -12,6 +12,58 @@ body {
   background: #4D469F url('https://thumbs.gfycat.com/EvenScaryKitfox-size_restricted.gif');
 }
 
+.pop-up-screen {
+  z-index: 1; 
+  width: 1440px;
+  height: 820px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background-opacity {
+  background-color: #3E4347;
+  opacity: 0.8;
+  z-index: 0;
+  width: 1440px;
+  height: 820px;
+  position: absolute;
+}
+
+.game-title {
+  z-index: 2;
+  font-size: 7rem;
+  background: linear-gradient(330deg, #FEB545 0%, #F4DF61 100%), #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 200px;
+}
+
+.input-container {
+  z-index: 2;
+}
+
+.player-inputs {
+  font-size: 1.6rem;
+  margin: 0 20px;
+}
+
+.start-game-btn {
+  font-size: 1.5rem;
+  background: rgba(241,231,103,1);
+  background: -moz-linear-gradient(45deg, rgba(241,231,103,1) 7%, rgba(241,230,102,1) 9%, rgba(254,182,69,1) 86%, rgba(254,182,69,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(7%, rgba(241,231,103,1)), color-stop(9%, rgba(241,230,102,1)), color-stop(86%, rgba(254,182,69,1)), color-stop(100%, rgba(254,182,69,1)));
+  background: -webkit-linear-gradient(45deg, rgba(241,231,103,1) 7%, rgba(241,230,102,1) 9%, rgba(254,182,69,1) 86%, rgba(254,182,69,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(241,231,103,1) 7%, rgba(241,230,102,1) 9%, rgba(254,182,69,1) 86%, rgba(254,182,69,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(241,231,103,1) 7%, rgba(241,230,102,1) 9%, rgba(254,182,69,1) 86%, rgba(254,182,69,1) 100%);
+  background: linear-gradient(45deg, rgba(241,231,103,1) 7%, rgba(241,230,102,1) 9%, rgba(254,182,69,1) 86%, rgba(254,182,69,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 ); 
+  border-radius: 16px;
+  color: #3E4347;
+}
+
 .left-section {
   grid-area: main;
 }
