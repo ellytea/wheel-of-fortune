@@ -1,4 +1,4 @@
-body {
+ body {
   font-family: 'Open Sans', sans-serif; 
   margin: 0;
   padding: 0;
@@ -99,13 +99,18 @@ body {
   width: 950px;
   height: 150px;
   border: solid 1px black;
-  background: #B3CEF3;
+  display: flex;
 }
 
-.vowel-container {
-  border-right: solid 2px black;
-  width: 200px;
-  height: 202px;
+.letters {
+  width: 100px;
+  font-size: 1.5rem;
+  background-color: #B3CEF3;
+  border-color: #7190BC;
+}
+
+.vowels {
+  background-color: #F3D9B3;
 }
 
 .round-container {
