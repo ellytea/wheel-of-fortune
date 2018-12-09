@@ -90,12 +90,9 @@ body {
   background-color: #33BF60;
 }
 
-.box1,
-.box14,
-.box43,
-.box56 {
-  background-color: #4D469F;
-  border: none;
+.not-box {
+  background-color: transparent;
+  border: solid transparent 1px;
 }
 
 .keyboard-container {
@@ -184,6 +181,19 @@ body {
 .spinner {
   width: 270px;
   margin: auto;
+}
+
+.spin {
+  -webkit-animation: rotation .7s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 }
 
 .spin-btn {
