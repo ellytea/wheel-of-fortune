@@ -187,7 +187,7 @@ body {
 }
 
 .spin {
-  -webkit-animation: rotation 2s;
+  -webkit-animation: rotation .7s infinite linear;
 }
 
 @-webkit-keyframes rotation {
