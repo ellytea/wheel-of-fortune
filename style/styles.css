@@ -90,12 +90,9 @@ body {
   background-color: #33BF60;
 }
 
-.box1,
-.box14,
-.box43,
-.box56 {
-  background-color: #4D469F;
-  border: none;
+.not-box {
+  background-color: transparent;
+  border: solid transparent 1px;
 }
 
 .keyboard-container {
