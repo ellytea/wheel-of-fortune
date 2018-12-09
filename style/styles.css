@@ -43,6 +43,7 @@
 
 .input-container {
   z-index: 2;
+  margin-bottom: 200px;
 }
 
 .player-inputs {
@@ -62,6 +63,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 ); 
   border-radius: 16px;
   color: #3E4347;
+  outline: none;
 }
 
 .left-section {
@@ -107,10 +109,23 @@
   font-size: 1.5rem;
   background-color: #B3CEF3;
   border-color: #7190BC;
+  outline: none;
+}
+
+.letters:hover {
+  background-color: #869BB6;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .vowels {
   background-color: #F3D9B3;
+}
+
+.vowels:hover {
+  background-color: #B6A386;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .round-container {
@@ -203,14 +218,32 @@
 
 .spin-btn {
   background-color: #EB89F9;
+  outline: none;
+}
+
+.spin-btn:hover {
+  background-color: #CE78DA;
+  color: #ffffff;
 }
 
 .solve-btn {
   background-color: #97E96E;
+  outline: none;
+}
+
+.solve-btn:hover {
+  background-color: #84CC60;
+  color: #ffffff;
 }
 
 .buy-btn {
   background-color: #F5B768;
+  outline: none;
+}
+
+.buy-btn:hover {
+  background-color: #D6A05B;
+  color: #ffffff;
 }
 
 .btn-styles {
@@ -219,4 +252,3 @@
   font-size: 1.2rem;
   font-weight: 800;
 }
-
