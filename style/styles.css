@@ -121,10 +121,21 @@ body {
   font-size: 2.2rem;
 }
 
+.catergory-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catergory-text {
   color: #fff;
   font-size: 2.2rem;
   margin: 15px 20px;
+}
+
+.spinner-score-text {
+  margin-right: 24px;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 .board-container,
@@ -173,10 +184,6 @@ body {
 .spinner {
   width: 270px;
   margin: auto;
-}
-
-.buttons-container {
-  /*margin-bottom: -15px;*/
 }
 
 .spin-btn {
