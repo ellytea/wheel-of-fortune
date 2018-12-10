@@ -154,6 +154,11 @@
   font-size: 2.2rem;
 }
 
+.tile {
+  background: #fff;
+  color: #fff;
+}
+
 .catergory-container {
   display: flex;
   justify-content: space-between;
