@@ -159,6 +159,15 @@
   color: #fff;
 }
 
+.correct-letter {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.7em;
+  background: #fff;
+}
+
 .catergory-container {
   display: flex;
   justify-content: space-between;
