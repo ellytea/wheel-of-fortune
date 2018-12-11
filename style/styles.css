@@ -279,3 +279,19 @@
   font-size: 1.2rem;
   font-weight: 800;
 }
+
+.pop-up-solve {
+  z-index: 1;
+  position: absolute;
+  background-color: pink;
+  width: 950px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+  visibility: hidden;
+}
