@@ -128,11 +128,14 @@
   outline: none;
 }
 
-.letters:disabled:hover {
+.cons:disabled:hover {
   cursor: not-allowed;
+  font-weight: 400;
+  color: #7f7f7f;
+  background-color: #B3CEF3;
 }
 
-.cons:hover {
+.letters:hover {
   background-color: #869BB6;
   font-weight: bold;
   color: #ffffff;
@@ -140,6 +143,8 @@
 
 .vowels:disabled {
   background-color: #F3D9B3;
+  color: #7f7f7f;
+  font-weight: 400;
 }
 
 .vowels {

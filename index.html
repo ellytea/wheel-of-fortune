@@ -2,12 +2,9 @@
 <html>
 <head>
   <title>Game Time</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="style/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
- <link rel="shortcut icon" href="../images/spinner.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/spinner.png" type="image/x-icon">
 </head>
 <body>
   <section class="pop-up-screen">
@@ -108,11 +105,11 @@
           <button class="sovle-puzzle-btn">Solve</button>
         </div>
       </section>
-      <button class="letters vowels letter-a-btn">A</button>
-      <button class="letters vowels letter-e-btn">E</button>
-      <button class="letters vowels letter-i-btn">I</button>
-      <button class="letters vowels letter-o-btn">O</button>
-      <button class="letters vowels letter-u-btn">U</button>
+      <button class="letters vowels letter-a-btn" disabled>A</button>
+      <button class="letters vowels letter-e-btn" disabled>E</button>
+      <button class="letters vowels letter-i-btn" disabled>I</button>
+      <button class="letters vowels letter-o-btn" disabled>O</button>
+      <button class="letters vowels letter-u-btn" disabled>U</button>
       <button class="letters cons letter-b-btn">B</button>
       <button class="letters cons letter-c-btn">C</button>
       <button class="letters cons letter-d-btn">D</button>
@@ -154,7 +151,7 @@
         <h3 class="player-font player3-total-text">Total Score: 0</h3>
       </div>
     </section>
-    <img class="spinner" src="../images/spinner.png">
+    <img class="spinner" src="images/spinner.png">
     <section class="buttons-container">
       <button class="btn-styles spin-btn">Spin</button>
       <button class="btn-styles solve-btn">Solve</button>
@@ -162,11 +159,14 @@
     </section>
   </aside>  
 </body>
-  <script type="text/javascript" src="../lib/domUpdates.js"></script>
-  <script type="text/javascript" src="../lib/data.js"></script>
-  <script type="text/javascript" src="../lib/Player.js"></script>
-  <script type="text/javascript" src="../lib/Game.js"></script>
-  <script type="text/javascript" src="../lib/Puzzle.js"></script>
-  <script type="text/javascript" src="../lib/Wheel.js"></script>
-  <script type="text/javascript" src="../lib/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="lib/domUpdates.js"></script>
+  <script type="text/javascript" src="lib/data.js"></script>
+  <script type="text/javascript" src="lib/Player.js"></script>
+  <script type="text/javascript" src="lib/Game.js"></script>
+  <script type="text/javascript" src="lib/Puzzle.js"></script>
+  <script type="text/javascript" src="lib/Wheel.js"></script>
+  <script type="text/javascript" src="lib/scripts.js"></script>
 </html>
