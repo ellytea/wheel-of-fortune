@@ -15,7 +15,7 @@ The goal for this project is to show our understanding of Object Oriented Progra
 * Built with jQuery
 * Testing with Mocha/Chai
 
-## Issues
+## Next Steps
 [Issues](https://github.com/ellytea/wheel-of-fortune/issues)
 
 ## Setup
