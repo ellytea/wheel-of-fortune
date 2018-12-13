@@ -297,13 +297,38 @@
 .pop-up-solve {
   z-index: 1;
   position: absolute;
-  background-color: pink;
+  background-color: #5A91D6;
   width: 950px;
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.solve-prompt {
+  font-size: 2rem;
+  margin: 3px;
+  color: #ffffff;
+}
+
+.solve-input {
+  width: 400px;
+  outline: none;
+  height: 40px;
+  border: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  font-size: 1.5rem;
+}
+
+.sovle-puzzle-btn {
+  height: 43.5px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-size: 1.5rem;
+  margin-left: -5px;
+  padding-bottom: 1.9px;
 }
 
 .hide {
