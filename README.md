@@ -1,6 +1,6 @@
 # Wheel of Fortune!
 
-Try out our recreation of the classic game show, Wheel of fortune! This game consist of 4 rounds and 3 players, spin the wheel and solve the answer! [Try out today]()
+Try out our recreation of the classic game show, Wheel of fortune! This game consist of 4 rounds and 3 players, spin the wheel and solve the answer! [Try out today](https://ellytea.github.io/wheel-of-fortune/)
 
 ## Original Wireframe
 ![Image of original wireframe](images/original-wire.png)
