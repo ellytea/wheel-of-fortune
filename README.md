@@ -20,7 +20,6 @@ The goal for this project is to show our understanding of Object Oriented Progra
 
 ## Setup
 clone down repo
-git@github.com:ellytea/wheel-of-fortune.git
 
 ## Turing D.T.R
 [DTR](https://gist.github.com/ellytea/94cd7c9af31a75f6477eea0835bc0c1e)
