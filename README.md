@@ -12,7 +12,7 @@ Try out our recreation of the classic game show, Wheel of fortune! This game con
 The goal for this project is to show our understanding of Object Oriented Programming, and using Test Driven Developement.
 
 ## Specs 
-* Built with jQuery
+* Built with javaScript and jQuery
 * Testing with Mocha/Chai
 
 ## Next Steps
