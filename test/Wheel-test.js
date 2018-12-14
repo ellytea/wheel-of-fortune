@@ -4,21 +4,19 @@ const expect = chai.expect;
 const spies = require('chai-spies');
 chai.use(spies);
 
-// global.Game = require('../lib/Game.js');
+global.Game = require('../lib/Game.js');
 global.Puzzle = require('../lib/Puzzle.js');
 global.data = require('../lib/data.js');
 global.domUpdates = require('../lib/domUpdates.js');
 
 describe('Wheel', function() {
 
-  let currentWheel;
+  let wheel;
   let game;
-  // let puzzle;
 
   beforeEach(function() {
-    currentWheel = new Wheel();
-    // game = new Game();
-    // puzzle = new Puzzle();
+    wheel = new Wheel();
+    game = new Game();
 
     chai.spy.on(global.domUpdates, ['displayNewGame',
      'displayNextRound','spin','displaySpinElement',
@@ -32,11 +30,11 @@ describe('Wheel', function() {
   });
  
 
-  it('should add 6 elements to an array', function() {
+  it('should add 6 elements to randomArray', function() {
+    wheel.generateSixElements();
 
-    currentWheel.generateSixElements();
-
-    expect(currentWheel.randomArray.length).to.equal(6);
-
+    expect(wheel.randomArray).to.have.lengthOf(6);
   });
+
+
 });

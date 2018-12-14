@@ -27,32 +27,37 @@ describe('Puzzle', function() {
     chai.spy.restore(global.domUpdates)
   });
 
-  it('should return array of four objects', function() {
+  it('should create puzzle with 2 keys', function() {
+    expect(puzzle).to.have.all.keys('puzzleArray', 'splitAnswerArr')
+  })
 
-    puzzle.generatePuzzles();
+  it('should return array of 4 objects', function() {
+  puzzle.generatePuzzles();
 
     expect(puzzle.puzzleArray.length).to.equal(4);
   });
 
-  it('should return array of four arrays', function() {
+  it('should return array of 4 arrays', function() {
+  puzzle.splitAnswer();
 
-    puzzle.splitAnswer();
-
-    expect(puzzle.rows.length).to.equal(4);
+    expect(puzzle.splitAnswerArr).to.be.an('array');
   });
 
   it('not entirely sure on how to test this function', function() {
-
-    puzzle.checkCharacters(array, row1, row2, row3, row4);
+  puzzle.checkCharacters(array, row1, row2, row3, row4);
 
     expect(puzzle).to.equal();
   });
   
-  it('should return array of four arrays', function() {
+  it('should return array of 4 arrays', function() {
+  puzzle.solvePuzzle();
 
-    puzzle.solvePuzzle();
-
-    expect(puzzle.rows.length).to.equal(4);
+    expect(domUpdates.displayHideSolve).to.have.been.called(1);
+    expect(domUpdates.showAnswer).to.have.been.called(1);
+    expect(domUpdates.displayHideSolve).to.have.been.called(1);
+    expect(domUpdates.clearInput).to.have.been.called(1);
   });
+
+
 
 });

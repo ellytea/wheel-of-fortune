@@ -27,17 +27,19 @@ describe('Player', function() {
     chai.spy.restore(global.domUpdates)
   });
 
-  it('should change player to current player', function() {
+  it('should create player with 4 keys', function() {
+    expect(player).to.have.all.keys('name', 'score', 'totalScore', 'turn')
 
-    let currentPlayer = game.currentPlayer;
-    player.changePlayerTurn(currentPlayer);
+  });
+
+
+  it('should change player to current player', function() {
+    player.changePlayerTurn('object');
 
     expect(player.turn).to.equal(true);
   });
 
   it('should Reset players ccurrent scores to 0 and add total to total score', function() {
-
-    let currentPlayer = game.currentPlayer;
     player.addTotalScore(currentPlayer);
 
     expect(player.score).to.equal(0);
@@ -45,17 +47,13 @@ describe('Player', function() {
   });
 
   it('should check if currentplayer can buy a vowel', function() {
-
-    let currentPlayer = game.currentPlayer;
     player.buyVowel();
 
     expect(player.score).to.toContain(100);
   });
 
-  it('should remove 100 from score if player buys a vowel', function() {
-
-    let currentPlayer = game.currentPlayer;
-    player.checkVowel();
+  it('should remove 100 from player score', function() {
+    player.checkVowel('string');
 
     expect(player.score).to.equal(true);
   });
