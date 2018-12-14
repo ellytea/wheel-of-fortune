@@ -171,6 +171,7 @@
 .tile {
   background: #fff;
   color: #fff;
+  font-size: .01px;
 }
 
 .correct-letter {

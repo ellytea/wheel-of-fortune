@@ -3,15 +3,18 @@ const expect = chai.expect;
 const spies = require('chai-spies');
 chai.use(spies);
 const Puzzle = require('../lib/Puzzle.js');
+global.Game = require('../lib/Game.js');
 global.data = require('../lib/data.js');
 global.domUpdates = require('../lib/domUpdates.js');
 
 describe('Puzzle', function() {
 
   let puzzle;
+  let game;
 
   beforeEach(function() {
     puzzle = new Puzzle();
+    game = new Game();
 
     chai.spy.on(global.domUpdates, ['displayNewGame',
      'displayNextRound','spin','displaySpinElement',
@@ -31,18 +34,25 @@ describe('Puzzle', function() {
     expect(puzzle.puzzleArray.length).to.equal(4);
   });
 
-  // it('should indicate hidden letters and spaces on board', function() {
+  it('should return array of four arrays', function() {
 
-  //     puzzle.showBoxAmount();
+    puzzle.splitAnswer();
 
-  //     // we want to get access to the answer
-  //     // then we want the the string to lowerCase
-  //     // split the string
-  //     // grab the length of the array
-  //     // display the amount of boxes needed
-  //     // if it contains a dash then display that dash
-  //     // if it contains a "" then stay green
-  //     // populate each element in that in order
-  // }); 
+    expect(puzzle.rows.length).to.equal(4);
+  });
+
+  it('not entirely sure on how to test this function', function() {
+
+    puzzle.checkCharacters(array, row1, row2, row3, row4);
+
+    expect(puzzle).to.equal();
+  });
+  
+  it('should return array of four arrays', function() {
+
+    puzzle.solvePuzzle();
+
+    expect(puzzle.rows.length).to.equal(4);
+  });
 
 });
