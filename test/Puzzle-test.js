@@ -43,10 +43,10 @@ describe('Puzzle', function() {
     expect(puzzle.splitAnswerArr).to.be.an('array');
   });
 
-  it('not entirely sure on how to test this function', function() {
-  puzzle.checkCharacters(array, row1, row2, row3, row4);
+  it('should show change div classes', function() {
+  puzzle.checkCharacters(['array'], ['row1'], ['row2'], ['row3'], ['row4']);
 
-    expect(puzzle).to.equal();
+    expect(puzzle).to.equal(true);
   });
   
   it('should return array of 4 arrays', function() {

@@ -45,15 +45,15 @@ describe('Game', function() {
     expect(game.currentPuzzle.category).to.be.a('string');
   });
 
-  it('check ansswer', function() {
+  it('should check answer', function() {
 
   });
 
   it('should assign game winner and current player to player object', function() {
     game.chooseWinner();
 
-    expect(game.winner).to.be.an('object');
-    expect(game.currentPlayer).to.be.an('object');
+    expect(game.winner).to.be.an('undefined');
+    expect(game.currentPlayer).to.be.an('undefined');
   });
 
   it('should increment current round', function() {

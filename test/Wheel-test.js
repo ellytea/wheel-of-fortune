@@ -30,10 +30,28 @@ describe('Wheel', function() {
   });
  
 
+  it('should create wheel with 2 keys', function() {
+    expect(wheel).to.have.all.keys('currentElement', 'randomArray');
+  })
+
+
   it('should add 6 elements to randomArray', function() {
     wheel.generateSixElements();
 
     expect(wheel.randomArray).to.have.lengthOf(6);
+  });
+
+  it('should return 1 element', function() {
+    let randomArray = [0];
+    wheel.getSpinResult([100, 100, 100, 100]);
+
+    expect(wheel.currentElement).to.equal(100);
+  });
+
+  it('should call domUpdates', function() {
+    wheel.checkSpinElement();
+
+    expect(domUpdates.displayScore).to.have.been.called(1);
   });
 
 

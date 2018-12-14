@@ -34,27 +34,33 @@ describe('Player', function() {
 
 
   it('should change player to current player', function() {
-    player.changePlayerTurn('object');
+    player.changePlayerTurn({turn: false});
 
+    expect(domUpdates.instructPlayer).to.have.been.called(1);
     expect(player.turn).to.equal(true);
   });
 
-  it('should Reset players ccurrent scores to 0 and add total to total score', function() {
+
+  it('should Reset players current scores to 0 and add total to total score', function() {
     player.addTotalScore(currentPlayer);
 
     expect(player.score).to.equal(0);
     expect(player.totalScore).not.to.equal(0);
   });
 
-  it('should check if currentplayer can buy a vowel', function() {
-    player.buyVowel();
 
-    expect(player.score).to.toContain(100);
+  it('should check if currentplayer can buy a vowel', function() {
+    player.buyVowel(100);
+
+    expect(buyVowel(100)).to.equal(true);
   });
+
 
   it('should remove 100 from player score', function() {
     player.checkVowel('string');
 
-    expect(player.score).to.equal(true);
+    expect(player.score).to.equal(0);
   });
+
+
 });
