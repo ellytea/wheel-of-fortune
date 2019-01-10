@@ -2,6 +2,16 @@
 
 Try out our recreation of the classic game show, Wheel of fortune! This game consist of 4 rounds and 3 players, spin the wheel and solve the answer! [Try out today](https://ellytea.github.io/wheel-of-fortune/)
 
+## Setup
+In your Terminal clone down repo
+```
+git clone git@github.com:ellytea/wheel-of-fortune.git
+```
+run
+```
+npm install
+```
+
 ## Original Wireframe
 ![Image of original wireframe](images/original-wire.png)
 
@@ -18,15 +28,6 @@ The goal for this project is to show our understanding of Object Oriented Progra
 ## Next Steps
 [Issues](https://github.com/ellytea/wheel-of-fortune/issues)
 
-## Setup
-In your Terminal clone down repo
-```
-git clone git@github.com:ellytea/wheel-of-fortune.git
-```
-run
-```
-npm install
-```
 
 ## Turing D.T.R
 [DTR](https://gist.github.com/ellytea/94cd7c9af31a75f6477eea0835bc0c1e)
