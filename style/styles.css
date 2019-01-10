@@ -14,8 +14,8 @@
 
 .pop-up-screen {
   z-index: 1; 
-  width: 1440px;
-  height: 820px;
+  width: 1500px;
+  height: 900px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -27,8 +27,8 @@
   background-color: #3E4347;
   opacity: 0.8;
   z-index: 0;
-  width: 1440px;
-  height: 820px;
+  width: 1780px;
+  height: 950px;
   position: absolute;
 }
 
